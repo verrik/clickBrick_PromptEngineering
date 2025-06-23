@@ -3,7 +3,18 @@
 
 ## Introduction
 
-[replace with Abstract]
+Prompt engineering is a powerful tool to optimize the use of generative AI in clinical settings, not only in psychiatry [1]. While large language models (LLMs) have shown potential across a range of tasks - from data extraction to psychotherapy [2] - their clinical utility hinges on how prompts are designed. Current reporting is often limited to non-clinical applications or vignettes [3, 4]. A structured approach to prompt engineering could enhance LLM performance. Here, we introduce clickBrick, a systematic method to test and refine prompts for extracting psychopathological features from psychiatric records based on our previous work [5], and evaluate their downstream impact on diagnostic prediction. We applied increasingly structured prompts to locally-run LLMs for extracting expert-annotated symptoms from admission notes. Classifiers trained on these outputs aimed to predict discharge diagnoses (ICD-10) in a dataset of 2,520 in-patient cases. Extraction accuracy varied significantly with prompt design (balanced accuracy: 71.45% to 93.59% for best prompts; 50% to 69.82% for worst). Chain-of-Thought prompts outperformed others in 7 out of 12 symptoms, though simpler prompts worked best for suicidality. Diagnostic classifiers trained on best-prompt outputs also showed superior performance for several diagnoses. Prompt engineering - particularly through iterative, structured and subject-matter expert-led design - is critical for unlocking LLMs’ clinical potential. In mental health research and beyond, it offers a scalable path to improve AI interpretability, accuracy, and real-world relevance.
+
+References
+[1] Clusmann, J., Kolbinger, F. R., Muti, H. S., Carrero, Z. I., Eckardt, J.-N., Laleh, N. G., Löffler, C. M. L., Schwarzkopf, S.-C., Unger, M., Veldhuizen, G. P., Wagner, S. J., & Kather, J. N. (2023). The future landscape of large language models in medicine. Communications Medicine, 3(1), 141. https://doi.org/10.1038/s43856-023-00370-1
+
+[2] Heinz, M. V., Mackin, D. M., Trudeau, B. M., Bhattacharya, S., Wang, Y., Banta, H. A., Jewett, A. D., Salzhauer, A. J., Griffin, T. Z., & Jacobson, N. C. (2025). Randomized Trial of a Generative AI Chatbot for Mental Health Treatment. NEJM AI. https://doi.org/10.1056/AIoa2400802
+
+[3] Kresevic, S., Giuffrè, M., Ajcevic, M., Accardo, A., Crocè, L. S., & Shung, D. L. (2024). Optimization of hepatological clinical guidelines interpretation by large language models: A retrieval augmented generation-based framework. Npj Digital Medicine, 7(1), 1–9. https://doi.org/10.1038/s41746-024-01091-y
+
+[4] Wang, L., Chen, X., Deng, X., Wen, H., You, M., Liu, W., Li, Q., & Li, J. (2024). Prompt engineering in consistency and reliability with the evidence-based guideline for LLMs. Npj Digital Medicine, 7(1), 1–9. https://doi.org/10.1038/s41746-024-01029-4
+
+[5] Wiest, I. C., Verhees, F. G., Ferber, D., Zhu, J., Bauer, M., Lewitzka, U., Pfennig, A., Mikolas, P., & Kather, J. N. (2024). Detection of suicidality from medical text using privacy-preserving large language models. The British Journal of Psychiatry, 1–6. https://doi.org/10.1192/bjp.2024.134
 
 add link to preprint
 
