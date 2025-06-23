@@ -40,7 +40,7 @@ It runs on llama.cpp. Please set it up according to the respective github reposi
 Please also see the LLM Information Extraction ppipeline documentation (LLM-AIx) used for this study.  (--> https://github.com/KatherLab/LLMAIx)
 
 #### Usage
-Run the script from the command line by specifying the path to your input file data:
+Run the script from the command line by specifying the path to your input file data and specify your extraction pattern (e.g. yes|no, reasoning):
 
 ```bash
 python extractinformation.py
@@ -50,7 +50,7 @@ python extractinformation.py
 This Python script extracts the desired answer format from the original LLM answers. 
 
 #### Usage
-Specify the path to your LLM output script and specify your extraction pattern (e.g. yes|no) Run the script from the command line. 
+Specify the path to your LLM output file and run the script from the command line. 
     
 ```bash
 python statisticalanalysis.py
